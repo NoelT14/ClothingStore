@@ -1,0 +1,76 @@
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 10000; /* Ensure cart is above other elements */
+  border-left: 1px solid #ccc; /* Add a border to differentiate it from the main page */
+  
+}
+.product-name{
+  margin-right: 5px;
+}
+
+.cart-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.quantity-controls {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center;
+  gap: 10px; /* Adds more space between the buttons */
+  width: 100%; /* Ensures the buttons span the entire width for centering */
+}
+
+.cart-item div {
+  display: flex;
+  gap: 5px;
+  justify-content: center; /* Center-aligns the buttons within the div */
+}
+
+.product-name {
+  flex-basis: 40%; /* Adjusts the width of the product name */
+  text-align: left; /* Aligns the name to the left */
+}
+
+.price {
+  text-align: right;
+  flex-basis: 15%; /* Reduces the width for the price */
+}
+
+.plus, .minus {
+  width: 35px; /* Adds a fixed width to the plus and minus buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center; /* Centers the Checkout and Close buttons */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.cart-summary p{
+  margin-left: 34px;
+}
+.checkout-btn{
+  width:120px;
+}

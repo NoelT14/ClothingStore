@@ -1,0 +1,155 @@
+.shop{
+  
+    flex: 1; /* This makes the shop section grow and fill the available space */
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+  
+}
+
+  .shop h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .shop-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-btn {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .filter-btn:hover {
+    background-color: #e43f52;
+  }
+  
+  .sort {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort label {
+    margin-right: 10px;
+  }
+  
+  .sort select {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Product List */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: 250px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #ff4b5c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 7px;
+  }
+  
+  .btn:hover {
+    background-color: #e43f52;
+  }
+  
+  a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  .search-container input{
+    width: 405px;
+    padding: 5px;
+    border-radius: 5px;
+    border : 1px solid ;
+  }
+
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4b5c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pagination li a:hover {
+    background-color: #e43f52;
+  }
+  
+  .pagination li.active a {
+    background-color: #333;
+    color: white;
+  }
+  
+  .pagination li.disabled a {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination li a:focus {
+    outline: none;
+  }
