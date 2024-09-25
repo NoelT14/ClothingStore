@@ -1,8 +1,8 @@
 package com.ClothingStore.ClothingStore_backend.webCOn;
 
 
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.filter.CorsFilter; // Keep this one
+
+import org.springframework.web.filter.CorsFilter; 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
